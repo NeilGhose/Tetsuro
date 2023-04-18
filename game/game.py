@@ -121,6 +121,7 @@ class Music():
 
     def speed_up(self):
         if self.bpm < 210:
+            self.stop()
             self.set_bpm(self.bpm + 15)
             return True
         return False
